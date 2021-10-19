@@ -1,9 +1,10 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import defaultload
 from datetime import datetime as dt
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///todo.db"
+db_Name = "sqlite:///"+"todo"+".db"
+app.config['SQLALCHEMY_DATABASE_URI'] = str(db_Name)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
@@ -19,7 +20,7 @@ class Todo(db.Model):
 
 
 @app.route("/", methods=["GET", "POST"])
-def hello_world():
+def main():
     if request.method == "POST":
         title = request.form['title']
         desc = request.form['desc']
@@ -30,5 +31,31 @@ def hello_world():
     return render_template('index.html', allTodo=allTodo)
 
 
+@app.route("/update/<int:sno>", methods=["GET", "POST"])
+def update(sno):
+    if request.method == "POST":
+        title = request.form['title']
+        desc = request.form['desc']
+        todo = Todo.query.filter_by(sno=sno).first()
+        todo.title = title
+        todo.desc = desc
+        db.session.add(todo)
+        db.session.commit()
+        return redirect("/")
+
+    todo = Todo.query.filter_by(sno=sno).first()
+    return render_template('update.html', todo=todo)
+    return "this is update page"
+
+
+@app.route("/done/<int:sno>")
+def done(sno):
+    todo = Todo.query.filter_by(sno=sno).first()
+    db.session.delete(todo)
+    db.session.commit()
+    return redirect("/")
+
+
 if __name__ == "__main__":
+    db.create_all()
     app.run(debug=True)

@@ -15,8 +15,8 @@ class Todo(db.Model):
     desc = db.Column(db.String(500), nullable=False)
     date_Modified = db.Column(db.Date, default=dt.now)
 
-    def __repr__(self) -> str:
-        return f"{self.sno} {self.title} {self.date_Modified}"
+    # def __repr__(self) -> str:
+    #     return f"{self.sno} {self.title} {self.date_Modified}"
 
 
 @app.route("/", methods=["GET", "POST"])
@@ -45,7 +45,6 @@ def update(sno):
 
     todo = Todo.query.filter_by(sno=sno).first()
     return render_template('update.html', todo=todo)
-    return "this is update page"
 
 
 @app.route("/done/<int:sno>")

@@ -9,12 +9,14 @@
     <form action="/" method="post">
         <div class="mb-3">
             <label for="title" class="form-label">TODO</label>
-            <input type="text" class="form-control" name="title" id="title" required>
+            <input type="text" class="form-control" name="title" placeholder="Ex: Go to the market...." id="title"
+                required>
 
         </div>
         <div class="mb-3">
             <label for="desc" class="form-label">Description</label>
-            <input type="text" class="form-control" name="desc" id="desc">
+            <input type="text" class="form-control" name="desc"
+                placeholder="Ex: Need to go to the market and buy the required vegetables....." id="desc">
         </div>
 
         <button type="submit button" class="btn btn-outline-secondary">ADD</button>
@@ -45,7 +47,7 @@
                 <td>{{todo.title}}</td>
                 <td>{{todo.desc}}</td>
                 <td>{{todo.date_Modified}}</td>
-                <td>
+                <td class="done">
                     <a href="/done/{{todo.sno}}" type="button" class="btn btn-outline-dark mx-1">DONE</button>
                         <a href="/update/{{todo.sno}}" type="button"
                             class="btn btn-outline-success mx-1">Update</button>

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import defaultload
 from datetime import datetime as dt
@@ -27,6 +27,7 @@ def main():
         todo = Todo(title=title, desc=desc)
         db.session.add(todo)
         db.session.commit()
+
     allTodo = Todo.query.all()
     return render_template('index.html', allTodo=allTodo)
 
@@ -57,4 +58,4 @@ def done(sno):
 
 if __name__ == "__main__":
     db.create_all()
-    app.run(debug=True)
+    app.run()

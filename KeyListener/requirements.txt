@@ -1,0 +1,9 @@
+autopep8==1.6.0
+pycodestyle==2.8.0
+pynput==1.7.6
+pyobjc-core==8.2
+pyobjc-framework-ApplicationServices==8.2
+pyobjc-framework-Cocoa==8.2
+pyobjc-framework-Quartz==8.2
+six==1.16.0
+toml==0.10.2

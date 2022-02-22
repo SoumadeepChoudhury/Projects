@@ -19,7 +19,7 @@ def db():
     # DB queries
 
     if con.is_connected:
-        query = "create table if not exists Question_Chooser (Slno int primary key auto_increment,Date date,questionNo int)"
+        query = "create table if not exists Question_Chooser (Slno int primary key,Date date,questionNo int)"
         cursor.execute(query)
         Q_NO = randint(1, 43)
         query = "select questionNo from Question_Chooser"

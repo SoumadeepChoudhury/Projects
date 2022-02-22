@@ -30,7 +30,7 @@ def db():
         if Q_NO not in li:
             query = f"insert into Question_Chooser (Slno,Date,questionNo) values({len(li)+1},'{date.today()}',{Q_NO})"
             cursor.execute(query)
-            return f"Your Magic Question No for today ( {date.today()} ) is {Q_NO} on {len(li)+1}"
+            return f"Your Magic Question No for today ( {date.today()} ) is {Q_NO}"
 
     else:
         return "Error in connection"

@@ -1,0 +1,90 @@
+[
+    {
+        "Q": "Memory management in Python is handled by the __________",
+        "op1": ""
+    },
+    {
+        "Q": "Python follows : ",
+        "op1": "OOP",
+        "op2": "POP",
+        "op3": "SOP",
+        "op4": "OOPL"
+    },
+    {
+        "Q": "What are List comprehensions?",
+        "op1": ""
+    },
+    {
+        "Q": "my_list = [2, 3, 5, 7, 11]\nsquared_list = [x**2 for x in my_list]",
+        "op1": "[4 , 9 , 2 , 49 , 121]",
+        "op2": "[4 , 9 , 25 , 49 , 121]",
+        "op3": "[4 , 922 , 25 , 491 , 121]",
+        "op4": "[4 , 91 , 25 , 49 , 121]"
+    },
+    {
+        "Q": "a = [1, 2, 3]\nb = [7,8,9]\n[(x + y) for (x,y) in zip(a,b)]",
+        "op1": "[8, 10, 12]",
+        "op2": "[81, 10, 12]",
+        "op3": "[8, 100, 12]",
+        "op4": "[8, 10, 121]"
+    },
+    {
+        "Q": " Consider the following pseudo code and determine how many times the code is executed.\ni:=0\nwhile i not equal to 5\n\t i:=i+1",
+        "op1": "4",
+        "op2": "5",
+        "op3": "0",
+        "op4": "6"
+    },
+    {
+        "Q": "Phython extension : ",
+        "op1": ".py",
+        "op2": ".pyw",
+        "op3": ".pyc",
+        "op4": "All of these"
+    },
+    {
+        "Q": "Explain split() and join() functions in Python?",
+        "op1": ""
+    },
+    {
+        "Q": "What are negative indexes and why are they used?",
+        "op1": ""
+    },
+    {
+        "Q": "WAP (Write a program) which takes a sequence of numbers and check if all numbers are unique.",
+        "op1": ""
+    },
+    {
+        "Q": "print(2*5)\nprint('2'*5)\nprint('2'**5)\nwill give output : ",
+        "op1": "2*5,10,32",
+        "op2": "7,Error,22222",
+        "op3": "10,22222,Error",
+        "op4": "None Of These.."
+    },
+    {
+        "Q": "Write a Program to match a string that has the letter 'a' followed by 4 to 8 'b's.",
+        "op1": ""
+    },
+    {
+        "Q": "Let func = lambda a, b : (a ** b), what is the output of func(float(10),20)",
+        "op1": "100000000000000000000",
+        "op2": "1e+20",
+        "op3": "100000000000000000000.0",
+        "op4": "1.0e+20"
+    },
+    {
+        "Q": "Let list1 = ['s', 'r', 'a', 's'] and list2 = ['a', 'a', 'n', 'h'], what is the output of [''.join([i, j]) for i, j in zip(list1, list2)]",
+        "op1": "['s', 'a', 'r', 'a', 'a', 'n', 's', 'h']",
+        "op2": "['s', 'r', 'a', 's', 'a', 'a', 'n', 'h']",
+        "op3": "['sa', 'ra', 'an', 'sh']",
+        "op4": "['sa', 'sa', 'sn', 'sh', 'ra', 'ra', 'rn', 'rh', 'aa', 'aa', 'an', 'ah', 'sa', 'sa', 'sn', 'sh']"
+    },
+    {
+        "Q": "WAP to reverse a String without using third variable and any reverse() function..",
+        "op1": ""
+    },
+    {
+        "Q": "WAP to reverse word by word in a text file and then reverse the entire sequence of the words one by one i.e., first word will go last, second word will go second last .....",
+        "op1": ""
+    }
+]

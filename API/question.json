@@ -86,5 +86,9 @@
     {
         "Q": "WAP to reverse word by word in a text file and then reverse the entire sequence of the words one by one i.e., first word will go last, second word will go second last .....",
         "op1": ""
+    },
+    {
+        "Q":"What is the difference between randint() and randrange()?",
+        "op1":""
     }
 ]

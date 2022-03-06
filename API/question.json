@@ -88,7 +88,35 @@
         "op1": ""
     },
     {
-        "Q":"What is the difference between randint() and randrange()?",
-        "op1":""
+        "Q": "What is the difference between randint() and randrange()?",
+        "op1": ""
+    },
+    {
+        "Q": " What is the difference between remove() function and del statement?",
+        "op1": ""
+    },
+    {
+        "Q": "What is the another function which we can use instead of del statement?",
+        "op1": ""
+    },
+    {
+        "Q": "What is swapcase() function in the Python? Write a code as an example to swapcase a user inputed word.",
+        "op1": ""
+    },
+    {
+        "Q": "Write a program to remove white spaces from a user given string without using any pyton built in functions.",
+        "op1": ""
+    },
+    {
+        "Q": "Which inbuilt functions is used to remove leading whitespaces from a string?",
+        "op1": ""
+    },
+    {
+        "Q": "Why do we use join() function in Python?",
+        "op1": ""
+    },
+    {
+        "Q": "When to use tuple instead of List?",
+        "op1": ""
     }
 ]
